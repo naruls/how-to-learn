@@ -1,8 +1,4 @@
-div{
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,6 +16,7 @@ div{
   max-height: 756px;
   display: flex;
   position: relative;
+  background-color:#f2f2f2; 
   /* выше установили ограничения для секции */
 }
 .logo{
@@ -63,7 +60,50 @@ div{
   position:absolute;
   height: 568px;
   width: 568px;
-  background: blue;
+  background: #2f80ed;
   right: 0px;
   top:64px;
 }
+/* Начало стилей для второго блока */
+.description{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top:100px;
+
+}
+.two-columns{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.two-columns__brief{
+  display: flex;
+  width: 175px;
+  line-height:1.2;
+  font-size: 18px;
+  font-weight:normal;
+  color: #2f80ed;
+}
+.two-columns__main-text{
+  display: flex;
+  width: 80%;
+  min-width: : 784px;
+  flex-direction: column;
+}
+.two-columns__paragraph{
+  line-height:34px;
+  font-size: 24px;
+  font-weight:normal;
+  margin-bottom: 30px;
+}
+/*В задании не нашёл настройку высоты макимальной и минимальной. Сделал отступы. Если будет ошибка, спросить как подбирать высоту.*/
+.two-columns__paragraph:last-of-type{
+  margin-bottom: 0;
+}
+.span-accent{
+  line-height:34px;
+  font-size: 24px;
+  font-weight:bold;
+}
+/* Начало стилей для третьего блока */
