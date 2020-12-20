@@ -1,9 +1,18 @@
+div{
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
 h1, h2, h3{
   margin: 0;
   padding: 0;
   font-size: 100%;
   font-weight: normal;
-}
+}/* Правило для сброса настроек заголовков*/
+.link{
+  text-decoration: none;
+  color: #2f80ed;
+}/* Правило для сброса настроек всех ссылок*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -163,4 +172,49 @@ h1, h2, h3{
 }
 .text:last-of-type{
   margin-bottom: 0;
+}
+/* Стили для пятого блока*/
+.feynman{
+  background-color:#f2f2f2; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 890px;
+  top:240px;
+}
+.feynman__title{
+  display: flex;
+  width: 648px;
+  top:100px;
+  margin: 100px auto 70px;
+  z-index: 2;
+  line-height:1.15;
+  font-size: 120px;
+  font-weight:bold;
+}
+.feynman__subtitle{
+  display: flex;
+  margin: 0 auto;
+  z-index: 2;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+}
+.feynman__link{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top:50%;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+}
+.feynman__images{
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0;
+  left: 0;
 }
