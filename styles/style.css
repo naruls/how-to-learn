@@ -172,7 +172,7 @@ h1, h2, h3{
   margin-bottom: 0;
 }
 .feynman{
-  background-color:#f2f2f2; 
+  background-color:#f2f2f2;
   position: relative;
   display: flex;
   flex-direction: column;
