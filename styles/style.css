@@ -1,4 +1,9 @@
-
+h1, h2, h3{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -107,3 +112,55 @@
   font-weight:bold;
 }
 /* Начало стилей для третьего блока */
+.digits{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  top:200px; /* Так как оодвигал второй и первый и второй блок 100px. Если это костыль, напишите пожалуйтса.*/
+}
+.section-title{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 20px;
+  line-height:1.15;
+  font-size: 60px;
+  font-weight:bold;
+}
+.section-subtitle{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 60px;
+  line-height:34px;
+  font-size: 24px;
+  font-weight:bold;
+}
+.table{
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cell{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-bottom: 60px;
+}
+.heading{
+  margin-bottom: 20px;
+  line-height:1.15;
+  font-size: 24px;
+  font-weight:bold;
+}
+.text{
+  margin-bottom: 20px;
+  line-height:1.2;
+  font-size: 18px;
+  font-weight:normal;
+}
+.text:last-of-type{
+  margin-bottom: 0;
+}
