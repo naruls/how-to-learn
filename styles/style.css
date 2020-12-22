@@ -3,12 +3,6 @@
   border-color: red;
   border-width: 1px;
 }*/
-.headings, .paragraphs{
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-weight: normal;
-}/* Правило для сброса настроек заголовков*/
 .link{
   text-decoration: none;
   color: #2f80ed;
@@ -93,6 +87,7 @@
   width: 80%;
 }
 .two-columns__brief{
+  margin: 0;
   display: flex;
   width: 175px;
   line-height:1.2;
@@ -110,7 +105,7 @@
   line-height:34px;
   font-size: 24px;
   font-weight:normal;
-  margin-bottom: 30px;
+  margin:0 0 30px;
 }
 /*В задании не нашёл настройку высоты макимальной и минимальной. Сделал отступы. Если будет ошибка, спросить как подбирать высоту.(Ответ получил, спасибо!)*/
 .two-columns__paragraph:last-of-type{
@@ -151,6 +146,7 @@
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .table__cell{
   display: flex;
@@ -159,28 +155,27 @@
   margin-top: 60px;
 }
 .table__heading{
-  margin-bottom: 20px;
+  margin:0 0 20px;
   line-height:1.15;
   font-size: 24px;
   font-weight:bold;
 }
 .table__text{
-  margin-bottom: 20px;
+  margin:0 0 20px;
   line-height:1.2;
   font-size: 18px;
   font-weight:normal;
 }
-.text:last-of-type{
+.table__text:last-of-type{
   margin-bottom: 0;
 }
 .feynman{
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 100px;
-  height: 790px;
-  margin-top: 100px;
-  background-image: url(../images/feynman.png); /*Хотел сразу сделать таким образом, но не вышло и решил сделать через <img>. Долго думал почему не получалось, пока не понял что забыл совсем об поднятии на верхний уровень. /images/feynman.png - писал так*/
+  padding: 100px; /*Вроде тепрь всё прваильно по отступам и размерам, но карьтнка не сходится(. (Должно имя с кругом соприкасаться)*/
+  min-height: 790px;/*Спустя пол века спонил эту фразу "В вашей вёрстке внешний вид секции может отличаться от прототипа. Ссылка может располагаться не на одном уровне с подзаголовком.")*/
+  background-image: url(../images/feynman.png); 
   background-size: 867px 637px;
   background-repeat: no-repeat;
   background-position: 0% 100%;
@@ -189,7 +184,7 @@
 .feynman__title{
   display: flex;
   width: 648px;
-  margin: 100px auto 70px;
+  margin: 0 auto 70px;
   text-align: center;
   z-index: 2;
   line-height:1.15;
@@ -226,7 +221,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  background-color: #1f1f1f;
   z-index: 1;
   overflow: hidden;
 }
@@ -265,7 +260,7 @@ margin-bottom: 0;
   box-sizing: border-box;
   display: flex;
   min-height: 350px;
-  background-color: #000;
+  background-color: #1f1f1f;
   color: #fff;
   padding-top: 60px;
 }
@@ -276,6 +271,8 @@ margin-bottom: 0;
   justify-content: space-between;
 }
 .footer__column_content_copyright{
+  display: flex;
+  justify-content: space-between;
   width: auto;
   margin: 0;
   flex-direction: column;
@@ -309,6 +306,7 @@ margin-bottom: 0;
   text-align: left;
 }
 .footer__column-heading{
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight:bold;
@@ -330,3 +328,4 @@ margin-bottom: 0;
   height: 16px;
   margin-right: 10px;
 }
+
