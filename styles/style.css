@@ -41,13 +41,14 @@
   width: 730px;
   align-items: center;
   align-self: center;
-  margin-left: 64px;
+  margin:0 0 0 64px;
   z-index: 3;
   line-height:96px;
   font-size: 102px;
   font-weight:bold;
 }
 .header__subtitle{
+  margin: 0;
   position: absolute;
   z-index: 3;
   width: 388px;
