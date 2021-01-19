@@ -1,0 +1,8 @@
+.link{
+  text-decoration: none;
+  color: #2f80ed;
+}/* Правило для сброса настроек всех ссылок*/
+.link:hover{
+  opacity:0.5;
+  transition-duration:1.5s;
+}

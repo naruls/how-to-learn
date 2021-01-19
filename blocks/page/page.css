@@ -8,13 +8,3 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
-.link{
-  text-decoration: none;
-  color: #2f80ed;
-}/* Правило для сброса настроек всех ссылок*/
-.link:hover{
-  transition:;
-  opacity:0.5;
-  transition-duration:1.5s;
-}
